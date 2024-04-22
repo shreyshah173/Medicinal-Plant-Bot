@@ -61,6 +61,6 @@ def DiseaseOutput(image_path, labels_path, model_weights_path):
     return ans
 
 # print("started printing ")
-print(DiseaseOutput(image_path, labels_path, model_weights_path))   
+# print(DiseaseOutput(image_path, labels_path, model_weights_path))   
 # print("ended printing ")
 

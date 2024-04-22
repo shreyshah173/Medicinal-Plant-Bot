@@ -71,7 +71,7 @@ def DiseaseOutput(image, labels_path, model_weights_path):
         return None
 
     ans = find_key(labels, max_index)
-
+    
     # print("before return")
     return ans
 
@@ -188,7 +188,7 @@ else:
     new_shape = (128, 128)
     # image = tf.io.read_file(img)
     disease = DiseaseOutput(img, labels_path1, model_weights_path1)
-    st.write(f"Predicted disease is :", disease)
+    # st.write(f"Predicted disease is :", disease)
 
     # image = tf.image.decode_image(image, channels=3)
     resized_image = tf.image.resize(image, new_shape)
